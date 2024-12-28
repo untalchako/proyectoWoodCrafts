@@ -1,0 +1,384 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+
+.padre {
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+
+
+.header {
+    background: url(../img/header-img.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+.menu {
+    background: rgba(51, 196, 124, 0.144);
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100px;
+    align-items: center;
+    border-bottom: 1px solid rgba(218, 125, 20, 0.959);
+
+}
+.logo {
+    flex: 1 1 auto;
+    margin-left: 100px;
+}
+.logo a {
+    text-decoration: none;
+}
+
+.logo img {
+    width: 130px;
+    height: 100px;
+}
+
+
+
+.nav {
+    /*background-color: aquamarine; */
+    flex: 5 1 auto;
+}
+.nav ul li {
+    list-style: none;
+    display: flex;
+    display: inline-block;
+    margin: 20px;
+}
+.nav a {
+    text-decoration: none;
+}
+.nav a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.carrito {
+    /*background-color: aquamarine;*/
+    flex: 1 1 auto;
+}
+.carrito a {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+.carrito a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.cart-products{
+    position: absolute!important;
+    top: 82px;
+    right: -18px;
+    background-color: #fff;
+    padding: 0 18px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    display: none;
+
+    min-width: 290px;
+}
+
+/*float cart*/
+.cart-products .item img{
+    width: 115px;
+}
+
+.cart-products .item{
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px red;
+}
+.cart-products .item .item-content{
+    margin: 0 19px;
+    width: 201px;
+}
+.cart-products .item .item-content h5{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: system-ui;
+}
+.cart-products .item .item-content h6{
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: system-ui;
+}
+.cart-products .item span{
+    background-color: red;
+    padding: 0px 5px;
+    border-radius: 50%;
+    color: #fff;
+    font-family: system-ui;
+    cursor: pointer;
+}
+.cart-products h3{
+    margin-bottom: 0;
+}
+.cart-products .item .item-content h5.cart-price{
+    font-weight: 700;
+}
+
+/*styLe to btn close*/
+p.close-btn{
+    top: -4px;
+    right: 6px;
+    cursor: pointer;
+    color: #000;
+}
+p.author {
+    display: flex;
+    justify-content: center;
+    FONT-VARIANT: JIS04;
+    margin-top: 3%;
+    gap: 7px;
+}
+p.author a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+}
+
+
+
+
+
+
+
+.texto-principal {
+    /*background-color: azure;*/
+    height: 620px;
+    
+}
+h1 {
+    /*background-color: aquamarine;*/
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+    margin: 2% 0% 1% 0%;
+    text-align: center;
+}
+.texto-principal {
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/* productos */
+
+.container h2 {
+    text-align: center;
+    margin: 5%;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.carts{
+    max-width: 450px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    padding-bottom: 34px;
+    margin-bottom: 40px;
+}
+.carts img{
+    width: 100%;
+}
+.carts p{
+    font-family: system-ui;
+    font-weight: 500;
+    padding: 0 20px;
+    margin-bottom: 24px;
+}
+.carts div p{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background-color: rgb(0, 235, 129);
+    color: #fff;
+    padding: 2px 7px 4px 21px;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+.carts div{
+    position: relative;
+}
+.carts a{
+    font-family: system-ui;
+    text-decoration: none;
+    background: red;
+    padding: 9px 23px;
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.carts a:hover{
+    background: #fff;
+    color: red;
+    border: solid 2px red;
+    transition-duration: .3s;
+}
+
+
+
+.section-2 {
+    background: rgba(51, 196, 124, 0.144);
+    text-align: center;
+}
+
+.articulos-2 {
+    margin-bottom: 5%;
+}
+
+
+
+.section-2 h2 {
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background: rgba(51, 196, 124, 0.144);
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+.footer div h3 {
+    color: black;
+    margin: 20px;
+    text-align: center;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}	
+
+.redes a {
+    font-size: 30px;
+    margin: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* Responsive */
+
+
+
+@media all and (max-width: 800px) {
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+    .section {
+        flex-direction: column;
+    }
+    .aside {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .articulos {
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .aside {
+        flex-direction: column;
+    }
+}
+
+
+/* Contacto */
+
+.formulario {
+    margin-top: 30px;
+	min-height: 100hv;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+form {
+	padding: 50px 50px;
+	box-shadow: 0 0 20px rgba(51, 196, 124, 0.144);
+	border-radius: 20px;
+	text-align: center;
+	width: 500px;
+}
+
+.input-group {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+
+.formulario h2 {
+	color: rgb(54, 21, 21);
+	font-size: 25px;
+}
+
+label {
+	color: blueviolet;
+	font-size: 15px;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+
+input, textarea {
+	padding: 15px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	background-color: rgba(51, 196, 124, 0.144);
+	border: 2px solid white;
+	outline: none;
+}
+
+.form-text {
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.form-text a {
+	color: rgb(199, 191, 191);
+	font-size: 15px;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.btn {
+	font-size: 16px;
+	color: white;
+	border: 0;
+	border-radius: 10px;
+	background-color: rgba(129, 165, 147, 0.781);
+	box-shadow: 0 0 20px rgba(10, 21, 0, 0.3);
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: rgba(51, 196, 124, 0.144);
+}
